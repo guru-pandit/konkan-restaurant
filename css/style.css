@@ -1,340 +1,329 @@
-:root{
-    --font: 'Poppins', sans-serif;
-    --dark: #242424;
-    --gray: #51585E;
-    --primary: #FE6209;
-    --secondary: #D65106;
-    --light: #F9F9FF;
+:root {
+  --font: "Poppins", sans-serif;
+  --dark: #242424;
+  --gray: #51585e;
+  --primary: #fe6209;
+  --secondary: #d65106;
+  --light: #f9f9ff;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-body{
-    font-family: var(--font) !important;
-    background-color: var(--light) !important;
+body {
+  font-family: var(--font) !important;
+  background-color: var(--light) !important;
 }
 
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
-
-
-
 
 /* NAVBAR */
-.navbar{
-    height: 80px;
-    padding-top: 0;
-    padding-bottom: 0;
+.navbar {
+  height: 80px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
-.navbar .container{
-    height: 100% !important;
+.logo {
+  width: 50px;
 }
 
-a.nav-link{
-    color: var(--light) !important;
+.navbar .container {
+  height: 100% !important;
 }
 
-li.nav-item:hover{
-    border-bottom: 2px solid var(--secondary);
-    transition: all .3s ease;
+a.nav-link {
+  color: var(--light) !important;
 }
 
-li.nav-item:hover a.nav-link{
-    color: var(--secondary) !important;
-    transition: all .3s ease;
+li.nav-item:hover {
+  border-bottom: 2px solid var(--secondary);
+  transition: all 0.3s ease;
 }
 
-
+li.nav-item:hover a.nav-link {
+  color: var(--secondary) !important;
+  transition: all 0.3s ease;
+}
 
 /* UTILITIES */
-.active{
-    border-bottom: 2px solid var(--secondary);
+.active {
+  border-bottom: 2px solid var(--secondary);
 }
 
-.active a{
-    color: var(--secondary) !important;
-    font-weight: 600;
+.active a {
+  color: var(--secondary) !important;
+  font-weight: 600;
 }
 
-
-
-
-.bg-dark{
-    background-color: var(--dark) !important;
+.bg-dark {
+  background-color: var(--dark) !important;
 }
 
-.bg-body{
-    background-color: var(--gray) !important;
+.bg-body {
+  background-color: var(--gray) !important;
 }
 
-.bg-secondary{
-    background-color: var(--secondary) !important;
+.bg-secondary {
+  background-color: var(--secondary) !important;
 }
 
-.bg-primary{
-    background-color: var(--primary) !important;
+.bg-primary {
+  background-color: var(--primary) !important;
 }
 
-.bg-light{
-    background-color: var(--light) !important;
+.bg-light {
+  background-color: var(--light) !important;
 }
 
-
-
-.text-dark{
-    color: var(--dark) !important;
+.text-dark {
+  color: var(--dark) !important;
 }
 
-.text-body{
-    color: var(--gray) !important;
+.text-body {
+  color: var(--gray) !important;
 }
 
-.text-secondary{
-    color: var(--secondary) !important;
+.text-secondary {
+  color: var(--secondary) !important;
 }
 
-.text-primary{
-    color: var(--primary) !important;
+.text-primary {
+  color: var(--primary) !important;
 }
 
-.text-light{
-    color: var(--light) !important;
+.text-light {
+  color: var(--light) !important;
 }
 
-.form-control{
-    border: 1px solid var(--gray);
+.form-control {
+  border: 1px solid var(--gray);
 }
 
-
-.font-14{
-    font-size: 0.875rem;
+.font-14 {
+  font-size: 0.875rem;
 }
 
-.font-16{
-    font-size: 1rem;
+.font-16 {
+  font-size: 1rem;
 }
 
-.font-18{
-    font-size: 1.125rem;
+.font-18 {
+  font-size: 1.125rem;
 }
 
-.btn-primary{
-    color: var(--light);
-    background-color: var(--primary);
-    border-color: var(--primary);
+.btn-primary {
+  color: var(--light);
+  background-color: var(--primary);
+  border-color: var(--primary);
 }
 
 .btn-primary:hover {
-    background-color: var(--secondary);
-    border-color: var(--secondary);
+  background-color: var(--secondary);
+  border-color: var(--secondary);
 }
 
 .btn-outline-primary {
-    color: var(--primary);
-    border-color: var(--primary);
+  color: var(--primary);
+  border-color: var(--primary);
 }
 
 .btn-outline-primary:hover {
-    color: var(--light);
-    background-color: var(--secondary);
-    border-color: var(--secondary);
+  color: var(--light);
+  background-color: var(--secondary);
+  border-color: var(--secondary);
 }
 
-
 .border-light {
-    border-color: var(--light) !important;
+  border-color: var(--light) !important;
 }
 
 .border-body {
-    border-color: var(--gray) !important;
+  border-color: var(--gray) !important;
 }
-
-
-
 
 /* HEADER */
-.header{
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url(../img/background.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)),
+    url(../img/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.go-to-top{
-    position: fixed;
-    height: 40px;
-    width: 40px;
-    right: 20px;
-    bottom: 20px;
-    z-index: 1000;
-    border: 1px solid var(--primary);
-    background-color: var(--primary);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all .3s ease;
+.go-to-top {
+  position: fixed;
+  height: 40px;
+  width: 40px;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1000;
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
 }
 
-.go-to-top:hover{
-    border-color: var(--secondary);
-    background-color: var(--secondary);
+.go-to-top:hover {
+  border-color: var(--secondary);
+  background-color: var(--secondary);
 }
-
 
 /* Hero Section */
-.hero-section{
-    height: calc(100vh - 80px);
+.hero-section {
+  height: calc(100vh - 80px);
 }
 
-.hero-section h1.konkan{
-    text-transform: uppercase;
-    font-size: 8.125rem;
-    font-weight: bold;
-    line-height: 100%;
-    text-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5);
+.hero-section h1.konkan {
+  text-transform: uppercase;
+  font-size: 8.125rem;
+  font-weight: bold;
+  line-height: 100%;
+  text-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5);
 }
-@media (max-width: 992px){
-    .hero-section h1.konkan{
-        font-size: 7rem;
-    }
+@media (max-width: 992px) {
+  .hero-section h1.konkan {
+    font-size: 7rem;
+  }
 }
-@media (max-width: 576px){
-    .hero-section h1.konkan{
-        font-size: 5.5rem;
-    }
-}
-
-@media (max-width: 576px){
-    .hero-section h1.konkan{
-        font-size: 4.5rem;
-    }
-}
-@media (max-width: 375px){
-    .hero-section h1.konkan{
-        font-size: 3.5rem;
-    }
+@media (max-width: 576px) {
+  .hero-section h1.konkan {
+    font-size: 5.5rem;
+  }
 }
 
-.hero-section h2.restaurant{
-    text-transform: uppercase;
+@media (max-width: 576px) {
+  .hero-section h1.konkan {
     font-size: 4.5rem;
-    font-weight: 300;
-    line-height: 100%;
-    letter-spacing: 0.22em;
-    text-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5);   
+  }
 }
-@media (max-width: 992px){
-    .hero-section h2.restaurant{
-        font-size: 4rem;
-    }
-}
-@media (max-width: 576px){
-    .hero-section h2.restaurant{
-        font-size: 3rem;
-    }
-}
-@media (max-width: 414px){
-    .hero-section h2.restaurant{
-        font-size: 2.5rem;
-    }
-}
-@media (max-width: 375px){
-    .hero-section h2.restaurant{
-        font-size: 2rem;
-    }
+@media (max-width: 375px) {
+  .hero-section h1.konkan {
+    font-size: 3.5rem;
+  }
 }
 
-.hero-section p.slogan{
-    text-transform: capitalize;
-    font-weight: 400;
-    margin-top: 1.8rem;
+.hero-section h2.restaurant {
+  text-transform: uppercase;
+  font-size: 4.5rem;
+  font-weight: 300;
+  line-height: 100%;
+  letter-spacing: 0.22em;
+  text-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 992px) {
+  .hero-section h2.restaurant {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 576px) {
+  .hero-section h2.restaurant {
     font-size: 3rem;
-    line-height: 100%;
-    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);   
+  }
 }
-@media (max-width: 992px){
-    .hero-section p.slogan{
-        font-size: 2.5rem;
-    }
+@media (max-width: 414px) {
+  .hero-section h2.restaurant {
+    font-size: 2.5rem;
+  }
 }
-@media (max-width: 576px){
-    .hero-section p.slogan{
-        font-size: 2rem;
-    }
-}
-@media (max-width: 414px){
-    .hero-section p.slogan{
-        font-size: 1.8rem;
-    }
-}
-@media (max-width: 375px){
-    .hero-section p.slogan{
-        font-size: 1.3rem;
-        margin-top: 1rem;
-    }
+@media (max-width: 375px) {
+  .hero-section h2.restaurant {
+    font-size: 2rem;
+  }
 }
 
-@media (max-width: 280px){
-    .hero-section p.slogan{
-        font-size: 1.2rem;
-        margin-top: 1rem;
-    }
+.hero-section p.slogan {
+  text-transform: capitalize;
+  font-weight: 400;
+  margin-top: 1.8rem;
+  font-size: 3rem;
+  line-height: 100%;
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 992px) {
+  .hero-section p.slogan {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .hero-section p.slogan {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 414px) {
+  .hero-section p.slogan {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 375px) {
+  .hero-section p.slogan {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 280px) {
+  .hero-section p.slogan {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
 }
 
 /* Speciality */
-.speciality{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url(../img/speciality-bg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.speciality {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)),
+    url(../img/speciality-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Reservation */
-.reservation{
-    padding-top: 6.25rem;
-    padding-bottom: 6.25rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url(../img/reservation.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.reservation {
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)),
+    url(../img/reservation.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
 
 /* Footer */
-.footer{
-    background-color: var(--dark);
+.footer {
+  background-color: var(--dark);
 }
 
-.social-icon .icon{
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    border: 2px solid var(--gray);
-    transition: all .3s ease;
+.social-icon .icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid var(--gray);
+  transition: all 0.3s ease;
 }
 
-.social-icon .icon:hover{
-    background-color: var(--secondary);
-    border-color: var(--secondary);
+.social-icon .icon:hover {
+  background-color: var(--secondary);
+  border-color: var(--secondary);
 }
 
-.social-icon .icon a{
-    color: var(--gray);
-    font-size: 1.25rem;
+.social-icon .icon a {
+  color: var(--gray);
+  font-size: 1.25rem;
 }
 
-.social-icon .icon:hover a{
-    color: var(--light);
+.social-icon .icon:hover a {
+  color: var(--light);
 }
-
